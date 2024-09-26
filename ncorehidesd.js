@@ -4,6 +4,7 @@
 // @updateURL   https://raw.githubusercontent.com/morpheus133/ncoreHideSD/refs/heads/master/ncorehidesd.js
 // @downloadURL https://raw.githubusercontent.com/morpheus133/ncoreHideSD/refs/heads/master/ncorehidesd.js
 // @description    Ncore-on eltünteti az SD tartalmakat a keresőből
+// @icon           https://static.ncore.pro/styles/ncore.ico
 // @include        /^https?://ncore\.(cc|pro)\/.*/
 // @author         Morpheus133
 // @copyright      (C) 2024  Morpheus133
