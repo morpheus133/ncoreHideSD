@@ -11,48 +11,21 @@
 // @version        1.3
 // ==/UserScript==
 
-var tbl=document.getElementsByTagName("table")[1];
+var movies_tbl=document.getElementsByTagName("table")[1];
+var series_tbl=document.getElementsByTagName("table")[2];
 
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
+/* Delete cells from Table */
+for( let i=12; i--; ){
+   movies_tbl.rows[0].deleteCell(1);
+   if (i>3){
+       series_tbl.rows[0].deleteCell(1);
+   }
+}
 
-tbl=document.getElementsByTagName("table")[2];
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].deleteCell(1);
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-tbl.rows[0].insertCell();
-
-
-
+/* Add empty cells back to keep arrangement */
+for( let i=10; i--; ){
+   movies_tbl.rows[0].insertCell();
+    if (i>2) {
+        series_tbl.rows[0].insertCell();
+    }
+}
