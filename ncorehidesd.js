@@ -5,18 +5,11 @@
 // @downloadURL    https://raw.githubusercontent.com/morpheus133/ncoreHideSD/refs/heads/master/ncorehidesd.js
 // @description    Ncore-on eltünteti az SD tartalmakat a kereső mezőből
 // @icon           https://static.ncore.pro/styles/ncore.ico
-// @include        /^https?://ncore\.(cc|pro)\/.*/
+// @match          https://*.ncore.pro/*
 // @author         Morpheus133
 // @copyright      (C) 2024  Morpheus133
-// @require        http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-// @version        1.2
-// @grant          GM_getValue
-// @grant          GM_setValue
-// @grant          GM_registerMenuCommand
-// @grant          GM_getResourceURL
-// @grant          GM_addStyle
+// @version        1.3
 // ==/UserScript==
-
 
 var tbl=document.getElementsByTagName("table")[1];
 
